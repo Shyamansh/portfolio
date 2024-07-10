@@ -1,0 +1,68 @@
+.navbar {
+    background-color: #333; /* Background color for the navigation bar */
+    width: 100%; /* Span the navbar across the entire width */
+    padding: 10px 0; /* Adjust padding as needed */
+}
+
+.navigation {
+    display: flex;
+    justify-content: center; /* Center align items horizontally */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.navigation li {
+    margin: 10px 15px; /* Adjust spacing between navigation items */
+    min-width: 100px; /* Ensure buttons have a minimum width */
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block; /* Ensure proper spacing */
+    text-align: center; /* Center align text */
+}
+
+.navigation a:hover {
+    background-color: #555; /* Darken background on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .navigation {
+        justify-content: space-around; /* Adjust alignment for medium screens */
+    }
+
+    .navigation li {
+        margin: 10px 10px; /* Adjust margin for medium screens */
+        min-width: 80px; /* Adjust minimum width for medium screens */
+    }
+
+    .navigation a {
+        font-size: 14px; /* Adjust font size for medium screens */
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navigation {
+        flex-direction: column; /* Stack items vertically for small screens */
+        align-items: center; /* Center align items vertically */
+    }
+
+    .navigation li {
+        margin: 10px 0; /* Adjust margin for small screens */
+        width: 100%; /* Ensure buttons take full width */
+        text-align: center; /* Center align text in buttons */
+    }
+
+    .navigation a {
+        font-size: 14px; /* Adjust font size for small screens */
+        padding: 8px 12px;
+    }
+}

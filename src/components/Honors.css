@@ -1,0 +1,33 @@
+#honors {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#honors h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.honors-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.honor-item {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 30%; /* Adjust the width as needed */
+}
+
+.medal-image {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    display: block;
+    margin: 0 auto 10px; /* Center the image and add space below it */
+}
+
+.honor-item p {
+    margin: 0; /* Remove default paragraph margin */
+}

@@ -1,0 +1,38 @@
+#education {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#education h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.education-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust gap as needed */
+}
+
+.education-image {
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 8px; /* Optional: Add some border-radius for better appearance */
+}
+
+.education-text {
+    flex: 1; /* Take up the remaining space */
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .education-content {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center;
+    }
+
+    .education-image {
+        max-width: 100px; /* Adjust size for smaller screens */
+    }
+}

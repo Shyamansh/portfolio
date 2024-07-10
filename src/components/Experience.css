@@ -1,0 +1,42 @@
+#experience {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#experience h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.experience-item {
+    margin-bottom: 30px; /* Add space after each item */
+}
+
+.experience-content {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Add space between image and text */
+}
+
+.experience-image {
+    max-width: 100px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 8px; /* Optional: Add some border-radius for better appearance */
+}
+
+.experience-text {
+    flex: 1; /* Take up the remaining space */
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .experience-content {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center;
+    }
+
+    .experience-image {
+        max-width: 80px; /* Adjust size for smaller screens */
+    }
+}
